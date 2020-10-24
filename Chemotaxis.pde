@@ -2,7 +2,7 @@
  void setup()   
  {     
    background(220,249,249);
-   size(300,300);
+   size(600,600);
    rain = new Bacteria[100];
    for(int i = 0; i < rain.length; i++)
    {
@@ -14,7 +14,7 @@
    background(220,249,249);
    int myX = 10;
    int myY = 25;
-   for (int i = 0; i < 31; i++)
+   for (int i = 0; i < 61; i++)
    {
    noStroke();
    fill(255);
@@ -34,13 +34,13 @@
    int x, y;
    int yspeed;
    Bacteria() {
-     x = (int)(Math.random()*300); //initial x and y coordinates
-     y = (int)(Math.random()*300);
+     x = (int)(Math.random()*600); //initial x and y coordinates
+     y = (int)(Math.random()*600);
      yspeed = 3;
    }
    void move(){
      y = y + yspeed; //code to move object
-     if(y > 300)
+     if(y > 600)
      {
        y = (int)(Math.random()*20);
      }
